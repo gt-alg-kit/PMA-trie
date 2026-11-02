@@ -1,0 +1,47 @@
+ARTSynchronized (flode, master f00003e), OptimisticLockCoupling/Tree.cpp and Tree.h: the compressed-prefix
+seek of the START-ONLY Tree::lookupRange(start, result[], resultLen, resultCount, ti). Its main loop
+(the descent from the root, which continues only along a start byte 0xff) handled a node whose
+compressed prefix compares BIGGER than start -- start diverges inside the prefix with a smaller byte, so
+every key below the node is greater than start -- exactly like an EQUAL one: it selected the node's
+children by the start byte at the mismatch position (checkPrefixCompare stops there) instead of the byte
+after the prefix, so children labelled below that byte were skipped although all their keys are >= start
+(stored {ff 'c' 'a', ff 'c' 'z'}, start ff 'b': only ff 'c' 'z' was returned). The recursive findStart
+already copies a Bigger subtree whole; the patch makes the main loop do the same. Reachable only below the
+root's 0xff child: the root (an N256) never carries a prefix. Tree.h gains the marker
+ART_OLC_TRIE_BENCH_SCAN_FIXES, which the benchmark adapter requires before it exposes the scan. Apply on
+top of artsync_olc_prefix_race.patch and artsync_olc_scan_null_child.patch (campaign copy
+~/dictcmp/baselines/ARTSynchronized; trie/bench/adapters/artsync_adapter.hpp documents all three and the
+adapter's own leading-key filter). Insert and lookup code is unchanged.
+--- a/OptimisticLockCoupling/Tree.cpp
++++ b/OptimisticLockCoupling/Tree.cpp
+@@ -450,8 +450,15 @@
+                 case PCCompareResults::Smaller: {
+                     return false;
+                 }
+-                case PCCompareResults::Equal:
+                 case PCCompareResults::Bigger: {
++                    // trie benchmark patch (2026-10-24): the node's prefix is greater than start at the first
++                    // differing byte, so every key below the node is greater than start: copy the whole subtree, as
++                    // findStart does. Handled like Equal, the children were selected by the start byte at the
++                    // mismatch position instead of the one after the prefix (keys >= start were skipped).
++                    copy(node);
++                    break;
++                }
++                case PCCompareResults::Equal: {
+                     uint8_t startLevel = (start.getKeyLen() > level) ? start[level] : 0;
+                     uint8_t endLevel = 255;
+                     if (startLevel != endLevel) {
+--- a/OptimisticLockCoupling/Tree.h
++++ b/OptimisticLockCoupling/Tree.h
+@@ -6,6 +6,11 @@
+ #define ART_OPTIMISTICLOCK_COUPLING_N_H
+ #include "N.h"
+ 
++// trie benchmark patch (2026-10-24): the start-only lookupRange carries the null-child fix
++// (artsync_olc_scan_null_child.patch) and the compressed-prefix seek fix (artsync_olc_scan_seek.patch);
++// the benchmark's ART-OLC adapter exposes its ordered scan only when this marker is defined.
++#define ART_OLC_TRIE_BENCH_SCAN_FIXES 2
++
+ using namespace ART;
+ 
+ namespace ART_OLC {

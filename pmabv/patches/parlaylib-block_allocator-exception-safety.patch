@@ -1,0 +1,43 @@
+# parlaylib patch carried by pmabv (not in upstream parlaylib).
+#
+# Upstream:    https://github.com/ParAlg/parlaylib (third-party repository: never push there)
+# Base commit: 2a55b05c2aa6451923614a989e5e026bc8056f68 ("Add BUILD files", 2024-11-14), the commit pmabv's
+#              include/parlaylib submodule pointer records
+# File:        include/parlay/internal/block_allocator.h
+# Fix:         block_allocator::allocate_blocks counted a new buffer (blocks_allocated) before recording it in
+#              allocated_buffers. Recording allocates a stack node; if that allocation throws, the buffer leaked and
+#              the count stayed raised. Now the buffer is recorded first, released with its alignment and the
+#              exception rethrown if recording fails, and only then counted.
+#
+# A recursive submodule checkout alone does NOT reproduce the patched dependency: the submodule pointer names the
+# unpatched upstream commit. After `git submodule update --init --recursive`, apply it once, from the pmabv root:
+#
+#     git -C include/parlaylib apply ../../patches/parlaylib-block_allocator-exception-safety.patch
+#
+# Check (succeeds only when the patch is applied):
+#
+#     git -C include/parlaylib apply --check --reverse ../../patches/parlaylib-block_allocator-exception-safety.patch
+#
+diff --git a/include/parlay/internal/block_allocator.h b/include/parlay/internal/block_allocator.h
+index eedbb57..6afdf6e 100644
+--- a/include/parlay/internal/block_allocator.h
++++ b/include/parlay/internal/block_allocator.h
+@@ -101,10 +101,16 @@ struct block_allocator {
+     auto buffer = static_cast<std::byte*>(::operator new(num_blocks * block_size, block_align));
+     assert(buffer != nullptr);
+ 
++    // Record the buffer before counting it: recording allocates a stack node, and if that allocation throws, the
++    // buffer is not yet owned by allocated_buffers -- release it here (same alignment) instead of leaking it.
++    try {
++      allocated_buffers.push(buffer); // keep track so can free later
++    } catch (...) {
++      ::operator delete(buffer, block_align);
++      throw;
++    }
+     blocks_allocated.fetch_add(num_blocks);
+     assert(blocks_allocated.load() <= max_blocks);
+-
+-    allocated_buffers.push(buffer); // keep track so can free later
+     return buffer;
+   }
+ 

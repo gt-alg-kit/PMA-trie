@@ -1,0 +1,93 @@
+{
+ "name": "end-b-full-hit-20261101-v1",
+ "processes": 3,
+ "workers": 64,
+ "cpus": "0-63",
+ "population": "full",
+ "point_sizes": [
+  "pct10"
+ ],
+ "query_modes": "all",
+ "range_modes": "direct",
+ "range_ks": [
+  100
+ ],
+ "range_paired": true,
+ "range_batch": 40000,
+ "range_workloads": [
+  "full-pop-range-paired-v1"
+ ],
+ "census_process": 1,
+ "profile": false,
+ "warm_rounds": 2,
+ "measured_rounds": 4,
+ "datasets": [
+  "c2_xml_recon",
+  "enwiki_20261001_ns0",
+  "webbase_2001",
+  "dna_full_31mers",
+  "uk_2014_urls"
+ ],
+ "arms": [
+  "dfuds",
+  "dfuds-dt"
+ ],
+ "per_dataset": {
+  "webbase_2001": {
+   "point_sizes": [
+    "pct0.001",
+    "pct0.01",
+    "pct0.1",
+    "pct1",
+    "pct10"
+   ],
+   "range_ks": [
+    1,
+    10,
+    100,
+    1000,
+    10000
+   ]
+  }
+ },
+ "supplied_L": true,
+ "key_end": {
+  "dfuds": "end_leaf",
+  "dfuds-dt": "end_leaf_front_and_rear"
+ },
+ "expected_trace_hashes": {
+  "c2_xml_recon": {
+   "starts_ids_hash": "398e9120146850be",
+   "starts_bytes_hash": "6de84741cdbe3994"
+  },
+  "enwiki_20261001_ns0": {
+   "starts_ids_hash": "1114f2fbe0a97509",
+   "starts_bytes_hash": "5857d97389497c9a"
+  },
+  "webbase_2001": {
+   "starts_ids_hash": "2d1d6a1358caaf43",
+   "starts_bytes_hash": "8d0678d731a0c3c9"
+  },
+  "dna_full_31mers": {
+   "starts_ids_hash": "1891b185832b2f99",
+   "starts_bytes_hash": "afb4582535867aa5"
+  },
+  "uk_2014_urls": {
+   "starts_ids_hash": "9685a46b5f0438c7",
+   "starts_bytes_hash": "2e3665b1175ee2a4"
+  }
+ },
+ "binaries": {
+  "bench_dictcmp": [
+   "TO_BE_FILLED_FROM_FROZEN_TXT"
+  ],
+  "bench_dictcmp_fst64": []
+ },
+ "salt": "end-b-full-hit-20261101-v1",
+ "experiment": "full-pop-hit-v1",
+ "range_experiment": "full-pop-range-paired-v1",
+ "source_root": "~/dictcmp/results_end_b_full_hit_2026-11-01/full_hit",
+ "snapshot": "~/dictcmp/main-<tag> (frozen by freeze_rerun.sh)",
+ "plan": "docs/dfuds_dt_full_hit_rerun_plan_2026-11-01.md",
+ "prepared": "rerun_prepare.py"
+}

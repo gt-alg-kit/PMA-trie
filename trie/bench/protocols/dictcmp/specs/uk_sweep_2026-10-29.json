@@ -1,0 +1,55 @@
+{
+ "processes": 3,
+ "workers": 64,
+ "cpus": "0-63",
+ "population": "full",
+ "range_paired": true,
+ "range_batch": 40000,
+ "census_process": 1,
+ "profile": false,
+ "warm_rounds": 2,
+ "measured_rounds": 4,
+ "name": "uk-range-sweep-2026-10-29",
+ "datasets": [
+  "uk_2014_urls"
+ ],
+ "arms": [
+  "dfuds",
+  "dfuds-dt",
+  "art-olc",
+  "hot-rowex",
+  "fst-64",
+  "marisa",
+  "pdt-static",
+  "dynpdt-compact"
+ ],
+ "point_sizes": [
+  "pct0.001",
+  "pct0.01",
+  "pct0.1",
+  "pct1",
+  "pct10"
+ ],
+ "query_modes": "all",
+ "range_ks": [
+  1,
+  10,
+  100,
+  1000,
+  10000
+ ],
+ "range_workloads": [
+  "uk-range-k-sweep-v1"
+ ],
+ "binaries": {
+  "bench_dictcmp": [
+   "771a9ad81ce00f95"
+  ],
+  "bench_dictcmp_fst64": [
+   "6164566c74f30a7a"
+  ]
+ },
+ "salt": "full-pop-hit-v1",
+ "source_root": "~/dictcmp/results_full_hit_2026-10-29",
+ "snapshot": "~/dictcmp/main-full-d (full-20261029d)"
+}

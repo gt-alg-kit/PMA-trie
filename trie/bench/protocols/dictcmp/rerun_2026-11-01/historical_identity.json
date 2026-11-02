@@ -1,0 +1,465 @@
+{
+ "paired_trace": {
+  "c2_xml_recon": {
+   "starts_ids_hash": "398e9120146850be",
+   "starts_bytes_hash": "6de84741cdbe3994",
+   "source_log": "results/dictionary_comparison_k100_webbase_2026-10-30/task_b/remote/c2_xml_recon/sessions/raw/S__c2_xml_recon__dfuds__p1.log",
+   "source_sha256": "426234e93fee1e3b961b28956225b5eb2b8a8a391b2b484e85872a3ffab09a91"
+  },
+  "enwiki_20261001_ns0": {
+   "starts_ids_hash": "1114f2fbe0a97509",
+   "starts_bytes_hash": "5857d97389497c9a",
+   "source_log": "results/dictionary_comparison_k100_webbase_2026-10-30/task_b/remote/enwiki_20261001_ns0/sessions/raw/S__enwiki_20261001_ns0__dfuds__p1.log",
+   "source_sha256": "896f84b88ac1d49ab1986e8061a82203b744e91e339b535443cb2eb2d0240c39"
+  },
+  "webbase_2001": {
+   "starts_ids_hash": "2d1d6a1358caaf43",
+   "starts_bytes_hash": "8d0678d731a0c3c9",
+   "source_log": "results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/sessions/raw/S__webbase_2001__dfuds__p1.log",
+   "source_sha256": "04afb72efd4fea6181d69667fd21e0817cdbaee1a245e7dbfc42466f78234dbb"
+  },
+  "dna_full_31mers": {
+   "starts_ids_hash": "1891b185832b2f99",
+   "starts_bytes_hash": "afb4582535867aa5",
+   "source_log": "results/dictionary_comparison_k100_webbase_2026-10-30/task_b/remote/dna_full_31mers/sessions/raw/S__dna_full_31mers__dfuds__p1.log",
+   "source_sha256": "21780c72ac25cef4a62a2ff6cfec5873e4aa15b220c6f25b1bc78698378dbe66"
+  },
+  "uk_2014_urls": {
+   "starts_ids_hash": "9685a46b5f0438c7",
+   "starts_bytes_hash": "2e3665b1175ee2a4",
+   "source_log": "results/dictionary_comparison_full_hit_2026-10-29/remote/uk_2014_urls/sessions/raw/S__uk_2014_urls__dfuds__p1.log",
+   "source_sha256": "90101d2dcecb39f86d173ba57f0aec85a938d7195610c33128a2af81c590d834"
+  }
+ },
+ "insertion": {
+  "datasets": {
+   "c2_xml_recon": {
+    "N": 2149271,
+    "S": 1504489,
+    "H": 644782,
+    "perm_hash": "5dfb3921883724c1",
+    "stored_sorted_hash": "8fa7e01e1c11e947"
+   },
+   "enwiki_20261001_ns0": {
+    "N": 19315921,
+    "S": 13521144,
+    "H": 5794777,
+    "perm_hash": "a447956350a0c0d2",
+    "stored_sorted_hash": "2c64a4b04371c889"
+   },
+   "webbase_2001": {
+    "N": 117603792,
+    "S": 82322654,
+    "H": 35281138,
+    "perm_hash": "bced6f4a3a17927f",
+    "stored_sorted_hash": "83b9463df96cf7e7"
+   },
+   "dna_full_31mers": {
+    "N": 367422517,
+    "S": 257195761,
+    "H": 110226756,
+    "perm_hash": "231d0a72fb81420a",
+    "stored_sorted_hash": "46dac11eb7f6c6b6"
+   },
+   "uk_2014_urls": {
+    "N": 787801471,
+    "S": 551461029,
+    "H": 236340442,
+    "perm_hash": "d45c11e7bc289a4d",
+    "stored_sorted_hash": "0a3cb47935c87c63"
+   }
+  },
+  "identity": {
+   "c2_xml_recon": {
+    "0.001": {
+     "b": 21,
+     "final": 1504552,
+     "ids_hash": [
+      "79df247152d93f1a",
+      "10402aa347b108ee",
+      "cf10d33c1aca4582"
+     ]
+    },
+    "0.01": {
+     "b": 214,
+     "final": 1505131,
+     "ids_hash": [
+      "10362bf1f0899621",
+      "06f9d6adcf3627f0",
+      "e523e0af079ee51b"
+     ]
+    },
+    "0.1": {
+     "b": 2149,
+     "final": 1510936,
+     "ids_hash": [
+      "230d4c85aea3ac40",
+      "ae6e6df0f41e22e8",
+      "61cfa9dd3c09b32e"
+     ]
+    },
+    "1": {
+     "b": 21492,
+     "final": 1568965,
+     "ids_hash": [
+      "75d8b20c70425ee6",
+      "4856a95a97f06d34",
+      "0e36d9f822f93f00"
+     ]
+    },
+    "10": {
+     "b": 214927,
+     "final": 2149270,
+     "ids_hash": [
+      "fffd4b3e7a953c8d",
+      "276b61cb081b08fb",
+      "52e757db8d72219e"
+     ]
+    }
+   },
+   "enwiki_20261001_ns0": {
+    "0.001": {
+     "b": 193,
+     "final": 13521723,
+     "ids_hash": [
+      "fc7f11e751edf9a8",
+      "c4633afe26f60a69",
+      "ab514854d54bb8ae"
+     ]
+    },
+    "0.01": {
+     "b": 1931,
+     "final": 13526937,
+     "ids_hash": [
+      "49f9a286f8ae71e2",
+      "4c7b74ae65192290",
+      "4001db62c857190e"
+     ]
+    },
+    "0.1": {
+     "b": 19315,
+     "final": 13579089,
+     "ids_hash": [
+      "3b53d0ed2771ed87",
+      "ad7a0a7918620d4d",
+      "8108900195d24e34"
+     ]
+    },
+    "1": {
+     "b": 193159,
+     "final": 14100621,
+     "ids_hash": [
+      "7c62b5f6c7d2d286",
+      "57cb3db4f4e67f2c",
+      "af90d9a9922b381b"
+     ]
+    },
+    "10": {
+     "b": 1931592,
+     "final": 19315920,
+     "ids_hash": [
+      "e49b8062ac727993",
+      "a09980d4ec13f884",
+      "e43f69ab68e83f9d"
+     ]
+    }
+   },
+   "webbase_2001": {
+    "0.001": {
+     "b": 1176,
+     "final": 82326182,
+     "ids_hash": [
+      "712147b620ca2f2a",
+      "f3596d23bcfdb443",
+      "a986fed8f7317aae"
+     ]
+    },
+    "0.01": {
+     "b": 11760,
+     "final": 82357934,
+     "ids_hash": [
+      "e38ac56008fe1b3c",
+      "93ae9c63fdcfe3d6",
+      "0217deb24f6acc19"
+     ]
+    },
+    "0.1": {
+     "b": 117603,
+     "final": 82675463,
+     "ids_hash": [
+      "805e1d41b95cd3a1",
+      "db12c37c99bb7692",
+      "8833d1a0fa801399"
+     ]
+    },
+    "1": {
+     "b": 1176037,
+     "final": 85850765,
+     "ids_hash": [
+      "922b64a6045b3dbd",
+      "3f458bb8e677a587",
+      "674cef7a33580cec"
+     ]
+    },
+    "10": {
+     "b": 11760379,
+     "final": 117603791,
+     "ids_hash": [
+      "f66594d61c704339",
+      "a08928891a184585",
+      "7e0d778ad8ef055a"
+     ]
+    }
+   },
+   "dna_full_31mers": {
+    "0.001": {
+     "b": 3674,
+     "final": 257206783,
+     "ids_hash": [
+      "674427f15702cd79",
+      "9e533a37b93cd511",
+      "e61fa6a11a3bdff1"
+     ]
+    },
+    "0.01": {
+     "b": 36742,
+     "final": 257305987,
+     "ids_hash": [
+      "0ada2c80b95c1b3e",
+      "6cb3cc6fdfec51de",
+      "f53e3460f70210d1"
+     ]
+    },
+    "0.1": {
+     "b": 367422,
+     "final": 258298027,
+     "ids_hash": [
+      "5747f7e67696908d",
+      "c0364c2a840318d8",
+      "ad29437b14c54e6a"
+     ]
+    },
+    "1": {
+     "b": 3674225,
+     "final": 268218436,
+     "ids_hash": [
+      "3518332d10a6c660",
+      "609582ca32d3aa2b",
+      "c27c718cff2e8b69"
+     ]
+    },
+    "10": {
+     "b": 36742251,
+     "final": 367422514,
+     "ids_hash": [
+      "1837cc5202d5885f",
+      "da4951e07d79b6be",
+      "dad86b1be0d2e22d"
+     ]
+    }
+   },
+   "uk_2014_urls": {
+    "0.001": {
+     "b": 7878,
+     "final": 551484663,
+     "ids_hash": [
+      "a63ff3ffb22c978a",
+      "240eb3edbc11556b",
+      "19f213fc33928006"
+     ]
+    },
+    "0.01": {
+     "b": 78780,
+     "final": 551697369,
+     "ids_hash": [
+      "34005dc97dffabe1",
+      "b8e2c08a5511e6ab",
+      "1bf5b6afb5b49441"
+     ]
+    },
+    "0.1": {
+     "b": 787801,
+     "final": 553824432,
+     "ids_hash": [
+      "96dcc20a423d4495",
+      "61dddc98e7afb1e4",
+      "917ac86df45d264d"
+     ]
+    },
+    "1": {
+     "b": 7878014,
+     "final": 575095071,
+     "ids_hash": [
+      "e0ddaea8ff45a88b",
+      "8d40511f7845d755",
+      "4a056175a03d699e"
+     ]
+    },
+    "10": {
+     "b": 78780147,
+     "final": 787801470,
+     "ids_hash": [
+      "56dcc341c3d7b7da",
+      "4d8d65448311af79",
+      "aefcf73c82c91e2f"
+     ]
+    }
+   }
+  },
+  "binary_sha16": [
+   "4ae0d3084f1c4d2b"
+  ],
+  "logs_sha256": {
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds__pct0.001__p1.log": "8cd033215c775356548ae11c2f4b7085238a32d499f846ec9f022da377a40fe1",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds__pct0.001__p2.log": "f7d739bf3f3bde2a81f21b4c737996982dda1bca7c3054ea908c643965afd7ae",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds__pct0.001__p3.log": "69a3f2a6b4379f763589a8dbb4ff44737c350d4f7cb2e2c1bbe23e455a02de0e",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds-dt__pct0.001__p1.log": "c1d466abc1afa174e1aacf62855146460a301a263db9cb6990b79f72e6cf81f7",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds-dt__pct0.001__p2.log": "2d6460837bd8e012d85bab490452c36c3f2a3f69c74af1ca1e7f30d65a1323a9",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds-dt__pct0.001__p3.log": "99633d31d267985c604e24d18a1c0e12794705f48a5c4eff8997e327c27d3080",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds__pct0.01__p1.log": "ab08af973055e5169433568d3019497e1df2831b42a01dd576462abe6c1ff908",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds__pct0.01__p2.log": "39663e48e04b0b7069797a3ddd97a08d6c63067a744bb8c3dbf3d74707dc886d",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds__pct0.01__p3.log": "e49f6a86159aaa4682d67ab4e200cdc55ba106ab345a63ee8bdca0dd4ed7c303",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds-dt__pct0.01__p1.log": "6ebce32213da1f25074abd70be1d98ee0cf7a29cd2eba6aaf8dc4f9749344d7f",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds-dt__pct0.01__p2.log": "f47efe7387aa57edb75f415cb133dec1a0b651d1b5b58f794b96df87a9a51a26",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds-dt__pct0.01__p3.log": "318f2658572315f436f4cd40a83b0a9e897cee3c5d414822a155a69f51827e4c",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds__pct0.1__p1.log": "e75c173340b2b68a591dcecc7fb807272e99657dde77f01135a907528fdda120",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds__pct0.1__p2.log": "cb72d0a0c8472c81fc65cde5e4a06a435c5cba3d3bc4f87f9f5de7abd7da47cc",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds__pct0.1__p3.log": "a065df219c142a78d1e5d34015891d621b9cba331565cbf732153bf660f15b9d",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds-dt__pct0.1__p1.log": "13c32f6f76c6e64bfaac0841790e6386a86cf51c11a21b63a2111618bed12b4c",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds-dt__pct0.1__p2.log": "468cdedb7cfb515ffc715d6927c6eb3945cc9971a9ec267dfbcd03e4f3f870ff",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds-dt__pct0.1__p3.log": "4f9a3829911ebffdebc7f7b83c781a4f0e51515eccf84075cc87a19b64e58c90",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds__pct1__p1.log": "499e55d22f8fe49f0e6417473ca3df4d0e7c80b133df2b480b0cd93d74a029a4",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds__pct1__p2.log": "abcea9a1352868611864488544674b86d95d88c633f3f0d2dd79a6a9df21325d",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds__pct1__p3.log": "cf313725fdec16aa386f4497239f8d8da19220fb7a5b4aee6e4d422590f13fbf",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds-dt__pct1__p1.log": "8ab12de0847814a6d0fee97b70810931221ca52bef00277fe0537d032009059a",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds-dt__pct1__p2.log": "094735449757f3cef27ec96447878bb272709ec776089c38bcd4f431956feb3c",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds-dt__pct1__p3.log": "7912d76a9d5f68dfb0ecdccb9e15645e95157ba6a282e2572fddae86bc52aa0d",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds__pct10__p1.log": "051fe53c29ee7f4170ac6662689a76620c69122826dc78b592723a91fa19413d",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds__pct10__p2.log": "8b5e1e19cd361f0bd84c4ab1b237bbec588c15e0f434cfe3f975ca83ad2fb335",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds__pct10__p3.log": "7c90586f417b932ba35d2627e159fd56e8010d5d6106e70a9748df8932d7ebbb",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds-dt__pct10__p1.log": "da18d470842900763cc84faa0372103ea8f17a6d2c1af74eedff72594caf46ef",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds-dt__pct10__p2.log": "06c8ce23fdadcc3f265516d2fc4f901306382161ff10e9179e95809e3a2a06ef",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/c2_xml_recon/measure/raw/I__c2_xml_recon__dfuds-dt__pct10__p3.log": "2ba89a6d6a6b68988ec08f3b2bd6062fcf3f52138b9a17bc590d045f9b418379",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds__pct0.001__p1.log": "546d5d4a3e562680d88f8ee35c0226b563283d23e4fac11ce4134f2e75bb1172",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds__pct0.001__p2.log": "6a67a065cad30ce8bea0eb22a4d1fd46ed5a5d99c820ee2667c989f5472bfa4b",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds__pct0.001__p3.log": "723f8134c848af0a2a2c7fd94499728e02bd513aa8513f2224969826b65485ab",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds-dt__pct0.001__p1.log": "c3da545ceab90facce804741c314f9407efb7c05d8b69a687f4d6e54b1ca8f73",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds-dt__pct0.001__p2.log": "ab9cdb0075f6b3ae9f777ca5bd9e3a57804b72fd317077eec052be5f3c2810fa",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds-dt__pct0.001__p3.log": "0bb572885e4b1af6c67c91c74b1dd193b309769a18867af2ba7c935f01723016",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds__pct0.01__p1.log": "fdb800c50aaba04a8fe1c7d35640f04c07b0fcf85068cc4051879ec3d11d1e1b",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds__pct0.01__p2.log": "964e75a979ea5e33012ee99a3e0d92322cf03932e31cea993b5df38f32ac6dfc",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds__pct0.01__p3.log": "366887911869393d215f57270af50f8361e323171a7aa7efb6536ea0e467a2c6",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds-dt__pct0.01__p1.log": "28e76dcfc2938c7ec286b52d7f6775dcf21e6c9431e23804986a42d2aaf39a38",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds-dt__pct0.01__p2.log": "96400716d7d2e96c98b5f6600d3d0c105309f607691199acfd24ec2d63c1ce87",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds-dt__pct0.01__p3.log": "c9a4c6a536a13e93fa762b9bad7166db425c6974ee9eff87a898d6fa151d00bd",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds__pct0.1__p1.log": "0c164736bff94f0c1b5e98a63d91ecb7dbbaf1764417f7453e420b0115f015a2",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds__pct0.1__p2.log": "7d03389756b7bf68ae3fd21bf659b3554bac019822ca20357dca1c4dda848ac2",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds__pct0.1__p3.log": "6f12766dda2f698a760c8374ca346fad24ee70e3670a7472bb4034ce3744a3e0",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds-dt__pct0.1__p1.log": "7104e778a1805b12267fa1e0f1c0f1bc04ee1339c95f4a52220f3b79eabdbc27",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds-dt__pct0.1__p2.log": "64ad4602f169822ec06274a83935b38cba4f1872496c656cfc5a931fa708276b",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds-dt__pct0.1__p3.log": "1e3b76db78d6e21075a5c849605f7d3a033d3d4cfd7f3611f90c38a2d2f85828",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds__pct1__p1.log": "eadc73974b9c5b5229b97acdeadff02e8141727e3f374a1c524d979d69bc7ed7",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds__pct1__p2.log": "f1877f56239e2045bd3825a84a9b1bfe4eb073eb7385e163548d369934ad9912",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds__pct1__p3.log": "d2328e05761e9c30bece8f39318b8d0349b704c15c1e749f9d5e97fac2fd0e98",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds-dt__pct1__p1.log": "0be3b0f50ec3f9b336f28ac36d1e0fe3b5be45fe92677440f8718eb70371019f",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds-dt__pct1__p2.log": "2577b15150416c997f83e1b846afaa18ca9cf462a2e74ce9d49525751c46e1cd",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds-dt__pct1__p3.log": "bf72c519c08b2eeafc164482962c93257569dd8a930905e27bba2d09ff029775",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds__pct10__p1.log": "2ce665bff18794f9303d6ae5ae019d70ab4cd54eff55779382e0f8d44b1d2075",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds__pct10__p2.log": "3a0064cca5e0784859542f84e935a8e9efce5bec2ad69548eea400aeaf7aaa3c",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds__pct10__p3.log": "868118b1349bcea702ad843381eaccb12a6fe19a165b98eda440fed5e667b58c",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds-dt__pct10__p1.log": "fba2c942cd11070583b84582099babd6144abe697a6b6eab9f6ed2a255255ff8",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds-dt__pct10__p2.log": "57653842b73abd847752a7656ea15f5b1f4af37f0896d2dd3d3b323673535d12",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/enwiki_20261001_ns0/measure/raw/I__enwiki_20261001_ns0__dfuds-dt__pct10__p3.log": "a7dc274bc17227737e7ddd94dc94761dc5fe54deb2773dc4e626adc0de3989fc",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds__pct0.001__p1.log": "8ddebb85d8b936f6bce042accca6ca573b8e50dd79d078812a83a4ef4ed5d79f",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds__pct0.001__p2.log": "95563a58c855f852d7745b69404344f1d1c124d63edf8cc39546fadcc55d6fcc",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds__pct0.001__p3.log": "7013decf15e9fbd891f20b9cd0cbace397f1c0a40aaadf0ddcf6a49a3403f9b8",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds-dt__pct0.001__p1.log": "5d7c21b8b66abc13f576b4f7052006982c206ff0eddb2641c99bc752c9be4250",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds-dt__pct0.001__p2.log": "f64319ca192e6428f68b99fcb73365e638924c4cd72828ceec0409529cff9af2",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds-dt__pct0.001__p3.log": "27f9edd1d6d2a4017aec25e7de41e31e827cf4c4c03b6aaf17f38065c25cc1d0",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds__pct0.01__p1.log": "f4e7e25dc5006bcdb20380881bd809cc7ff35c8004bf2e17ba09ac2f06f75d01",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds__pct0.01__p2.log": "cb9a7c8dd82d867835ae4e0836bae8eeb7e1ccbbc8b04a92aa9b6199f0852129",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds__pct0.01__p3.log": "3c9c324329140c859fc7165d4e4d1a7ef29f007759b0860297b790c98ec0911f",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds-dt__pct0.01__p1.log": "cd12cccf3c8d5d62f4702e07c9fdc1aae2d4cf13a78158680fd6d333b1abe7be",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds-dt__pct0.01__p2.log": "d4ed7b0e6404bcd164519a3e3d5bc7954d0d61ee134729caf2766d9cbb5fafb2",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds-dt__pct0.01__p3.log": "2eb53d962081d83026a529bc711cc6da283554ce0281207b547ff13f7fad4894",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds__pct0.1__p1.log": "1ba297978463e09f1891cc7bbbe3e93cd23354053ff4518db37ca6efa8cdbcf4",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds__pct0.1__p2.log": "feb7ae3ca330bc27c24e22a3b86466dbf75ab98e15cdce26f0ad80639fdbb312",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds__pct0.1__p3.log": "bc47c53a055410c8d439b51bfc9de30e1e82ece3f9d05d40bd929d1cfaceb0ca",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds-dt__pct0.1__p1.log": "1252b6a8c21c20524f515629ae70e5397c4129e54596f59ad270aaac9b3200c2",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds-dt__pct0.1__p2.log": "42d4c1971bcb5c72d06d9beb48667593313e0d271ad92f737140315fae55f918",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds-dt__pct0.1__p3.log": "d011af9ebad33b7878fd7e56b8d8a8f2ed52ed795841cfe4a7bfc974858ff96e",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds__pct1__p1.log": "d9b1913c15d17b829342693e2f9c3b30cd74fb3c2cd5ac884956f59cb9a4da2a",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds__pct1__p2.log": "984a7e4699443309d19fc52dd66f23a76cb8d0c67c1200b3e028c57491906991",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds__pct1__p3.log": "64cf9f3e17662153c9c0bfb331a4bb4573d5fe1a8ee5736558d35985839aa0d0",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds-dt__pct1__p1.log": "20be8e4c37820be935dd95af3e4154eae08b8823f4dde15bb77bd1ad408bb6c0",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds-dt__pct1__p2.log": "8038642caa9608ca3abd383a278382ad84afa649477aed39878e1f14a87438df",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds-dt__pct1__p3.log": "566977b2b02683963727813b5fba92a9d8d495dd54a89009c534bd47803cf5ba",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds__pct10__p1.log": "39c6b6ee716ef5b3270e49ce3f728119d8eb938d6544d7006df45ccff38d7f37",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds__pct10__p2.log": "c5a418cee7b740951af0a69c85842113ba580723c0712281392923eb5eeaf1b8",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds__pct10__p3.log": "1673b356b80cb6121d31bdb52644613dacadb5846e6e8cfb059e1fe70a3fbf21",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds-dt__pct10__p1.log": "f4c8796f4998310b438f2c3c0f4dc762ce05ee5f87fad4f7da8d431ac699924f",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds-dt__pct10__p2.log": "aea41092285734f1067126a05bfa63e36ddc2cdfc86bae76e9b4bc74a4484970",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/webbase_2001/measure/raw/I__webbase_2001__dfuds-dt__pct10__p3.log": "d45da1ba9ca5f78b55db7535ec86c859c19e3a7f8c58dacbf605110b9816310b",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds__pct0.001__p1.log": "3d1851386cc3a48591b2fa7c45461b569d5aa47de6632443c3eafce140996a23",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds__pct0.001__p2.log": "bdb188971464f33be71c9e154a7aaecb9a2ed223c5fff6941f23a727681e1e77",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds__pct0.001__p3.log": "98e854681bd863febb26b498a71c452ffa1bedb3457d229f265c9e8f27779af7",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds-dt__pct0.001__p1.log": "0a93f06ae28c37c01c9f29f879c5fca7de80d43efa3bf40defb3c3f2cfd416ec",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds-dt__pct0.001__p2.log": "36245aaf6549c3b7639ec3ca5743253dad880c1130267bdd730b6cef33ea4fc3",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds-dt__pct0.001__p3.log": "96d3a2d5c5eab214dd457b775c46af7fcc3d86d7b1531aff2501b2d6e5a4f777",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds__pct0.01__p1.log": "9ada632482a849c445b352ac151275f250ce6b1f198fecf014b656306059e804",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds__pct0.01__p2.log": "145942fd359b160a6ac77d01bb0bb4f69d0b8eb1cf54dcb3e23b727b5d1b8ac7",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds__pct0.01__p3.log": "4eebf6167a4b95c887e0fc59c55d2d6496bb04f135692fe59c4465af7b3083b2",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds-dt__pct0.01__p1.log": "540956d47c185cff176588e54b8f5ead0c02eab563d58a3787baeaf219188b6d",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds-dt__pct0.01__p2.log": "86b4e2006965ab8041aaa4927dd85d3a1ed00b9f72063b39ac91222570847aec",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds-dt__pct0.01__p3.log": "0264c064156da00a3a82e33752d0ba85ee5d97323714345603bd9127fe9a7847",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds__pct0.1__p1.log": "7827dc5437e13c4c5c36b7fe13ea106cf3e0fb8a53af25e10a1b9ff19e9dd5ee",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds__pct0.1__p2.log": "6fba02c751cc8508bd8c2556ac677cff873ad8a905492c65b7091341c3964c02",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds__pct0.1__p3.log": "e32886221dfc58a7f8ebbe76a8d809c398504e1b70a08bae00396b773b3e1af6",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds-dt__pct0.1__p1.log": "e7eb4a4cae315882d81b78a0602f33c390d818f6470ddace757be252421f7b1a",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds-dt__pct0.1__p2.log": "b89a348c9e984128868d742097c3051c09837dec02a3b2ea39348e337cbd5364",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds-dt__pct0.1__p3.log": "ad322c41437c0913aafaf642f60a7f75fb38602813a4369b6dda594c02944fe0",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds__pct1__p1.log": "fa829fec1c04cebf57560ad8878a3de869b5fc4efe44fab759ff538d2889b771",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds__pct1__p2.log": "b02fc8f8f80ac3946ad255b938661f3c7adbc35ba6a3714a75994d2113bd05bb",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds__pct1__p3.log": "1fcc7bda72beda0071df0fe04752d3794517fe214ccd4e688557cb9b6a7f39ef",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds-dt__pct1__p1.log": "d4290c99cbea1c208d94c690fa28e442f3148a48c04eacb1032b4c6aec6fb1a1",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds-dt__pct1__p2.log": "ce8ceb817a2872c0dd8a0245079e3daa9b1e37ba9ff481f63a72f1ceea92483a",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds-dt__pct1__p3.log": "f20229ca14685566fedd8764cb445affcc9f378f229cda3015a68b7a28829516",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds__pct10__p1.log": "7ca27b8e2be2a353fd245aee33804e1f941833d3af9cd275a76ce41ce025dd37",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds__pct10__p2.log": "2861cfb04dd57307cf5815cd8804efceb786e683a7273f378fe40dfcd24acade",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds__pct10__p3.log": "8870db37151ef03350611c05297a02db6610c4d401d3f0d5b81d65e8e35fde15",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds-dt__pct10__p1.log": "ad17711499917d18f7b5041c94b952c0f0cbd5296c70a8d88d543017a79b9e1b",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds-dt__pct10__p2.log": "a67ebcf792173646548a7337f792e18030caa3bf9e2de718311050b3e977d80c",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/dna_full_31mers/measure/raw/I__dna_full_31mers__dfuds-dt__pct10__p3.log": "2be5d10fbc7e404652ed46d02cef1a8d2d59dd59d1e6081341082f316b649c52",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds__pct0.001__p1.log": "81b7e11f69b395969a85dcd07bb1b535f7ad3bb4b3cdbc40a5d4b223dab5852d",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds__pct0.001__p2.log": "42e1c54f5d0569698433bce962bc0bd9873d781673cdf0406eaecb7e89e5348a",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds__pct0.001__p3.log": "32b9f263ee931a0c636b7414e4a775c9e67e8cf815e3b1d12e9f417e03c582ee",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds-dt__pct0.001__p1.log": "53b744d3a3a21c0bc42658c80eef9bbe691ce9e526446a3f9c28fb5ad5ebcd7e",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds-dt__pct0.001__p2.log": "12f8d2a6d03a7da3ee6352fc22c224263d758c8d11d1cfb0516084d4591bb737",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds-dt__pct0.001__p3.log": "87c0ddf387913f46566588997969e7988d5c1f3303e82fff5cb972ba015b48e6",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds__pct0.01__p1.log": "3295f94f9ce878ab849a81cec11473653c229798250a5c44bd45143290560753",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds__pct0.01__p2.log": "ebec57f0f25a6ff7f536e45277620b37ae36d2973d7c070c0bbdd108b8c97e6e",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds__pct0.01__p3.log": "75a09991026fe86467680e777e9d28dbd3fbb699c42d8b66741389f094a58e74",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds-dt__pct0.01__p1.log": "8584c22519c8a7b15128e9a36568be546554b173e567443cd10caca9627f52e4",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds-dt__pct0.01__p2.log": "e89ee8422949d44d2dd6479d7df2a3e61a05dc5d9ecd7343cd43194b0f8c69be",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds-dt__pct0.01__p3.log": "bbae236ad81faf5a6d723340599f6f24895fd9c184c4d3fb93a1dba0d2c12436",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds__pct0.1__p1.log": "e24d79bbbf7793f55f08b9fbb1b3cfc0a90a22f0c36635a992fe489df7eb6d1f",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds__pct0.1__p2.log": "b9863f44e1b4959d50a1199e9f69d1c5faedbdce6cd35f21fc2bbfbaf69d71cd",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds__pct0.1__p3.log": "c8330ba4b88acdc79800f49d8ffcb584c3fb9f91ef9ed37b04ff887627263c6e",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds-dt__pct0.1__p1.log": "dc691ea52b30153bcc1f805eedb7bd0aefdf09c4bfaa62e9b902d0ae69851faf",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds-dt__pct0.1__p2.log": "e588647073bb61daf00d97b5c939c7833edbbdd263b0761bf779cc14180c7545",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds-dt__pct0.1__p3.log": "48eebe170abe5f3d0cbfb858ca40cd47adaf83c4320a410558fb64dab109026a",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds__pct1__p1.log": "6e18cdfba865b9d2fb9b8d906e49acbf452141e0c4549d13ddbe44436e35ed85",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds__pct1__p2.log": "ba9309ca2b2f1560e77e92662ba565fa9d9643a2090577f5d7c3a5dee02884d6",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds__pct1__p3.log": "f8ee9d1f46939048e722a2aa41c7f0323c8e7dda7dc7c616b7162e5d4f8b7004",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds-dt__pct1__p1.log": "b0d62de3fdb0cda58ea9d3292289e9575eaeb320fcc28203a8653ca1838dbddb",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds-dt__pct1__p2.log": "451433dca861dfbd13a72a405cb2f7f3e4104d56a9c56dc811e1f2f96c653a50",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds-dt__pct1__p3.log": "2ff48198a47106c864cb5d6ee29802a39785da0998a40467354cd7ab5225c333",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds__pct10__p1.log": "1de4e5f87670c19dd0026785b3490a9d46ccb2dd5aa8fdc1ec2eee57654c8f53",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds__pct10__p2.log": "c67bf385836818368167a20d9d40d71f602e641191f4bc7cc8bfff62f4c5523f",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds__pct10__p3.log": "3235166fe94ba7c1c0e6a6e95abaf01633acb64b49f5dbc8038fb3894a12d507",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds-dt__pct10__p1.log": "285eb66953f61061a1a2e5eff3f3bd05fee58939773d6f75ab31d07c81ddecf6",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds-dt__pct10__p2.log": "4a5c54ee7f390435d740bd6341795c0da093f966f3b031dddd641a3a78ddc9af",
+   "results/dictionary_comparison_2026-10-23/main_campaign/remote/uk_2014_urls/measure/raw/I__uk_2014_urls__dfuds-dt__pct10__p3.log": "e3c993eaa439ff6852317b980c27ed2261df190b81f2d9072b241fb298646717"
+  }
+ }
+}

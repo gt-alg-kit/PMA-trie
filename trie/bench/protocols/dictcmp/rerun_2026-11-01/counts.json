@@ -1,0 +1,22 @@
+{
+ "sessions": 30,
+ "builds": 30,
+ "censuses": 10,
+ "point_aggregates": 36,
+ "range_aggregates": 18,
+ "query_process_observations": 162,
+ "measured_query_rounds": 648,
+ "warm_up_query_rounds": 324,
+ "paired_increment_aggregates": 8,
+ "insertion_cells": 22,
+ "insertion_processes": 66,
+ "insertion_fresh_builds": 396,
+ "insertion_warm_up_rounds": 132,
+ "insertion_measured_rounds": 264,
+ "insertion_batch_records": 1188,
+ "insertion_measured_batches": 792,
+ "insertion_headline_aggregates": 22,
+ "insertion_batch_position_aggregates": 66,
+ "total_processes": 96,
+ "total_index_constructions": 426
+}

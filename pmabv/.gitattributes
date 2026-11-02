@@ -1,0 +1,3 @@
+# Carried third-party patches: their blank context lines are a single space (unified diff syntax), not trailing
+# whitespace to strip; exempt them from git's whitespace checks.
+patches/*.patch -whitespace

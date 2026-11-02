@@ -1,0 +1,13 @@
+.DS_Store
+build/
+__pycache__/
+.vscode/
+# Optional local baseline checkouts of the benchmark, created by trie/bench/fetch_baselines.sh
+# (trie/bench/protocols/README.md, "Optional baseline setup"); never committed, the build detects what is present.
+trie/baselines/C2/
+trie/baselines/poplar-trie/
+trie/baselines/ARTSynchronized/
+trie/baselines/hot/
+trie/baselines/fast_succinct_trie/
+trie/baselines/fast_succinct_trie_64/
+trie/baselines/.fst64.*/

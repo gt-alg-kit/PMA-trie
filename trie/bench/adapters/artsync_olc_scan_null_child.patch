@@ -1,0 +1,25 @@
+ARTSynchronized (flode, master f00003e), OptimisticLockCoupling/Tree.cpp, the START-ONLY
+Tree::lookupRange(start, result[], resultLen, resultCount, ti): when a start byte is 0xff the
+loop takes the `startLevel == endLevel` branch and continues with N::getChild(255, node), which
+may be null (no child labeled 255: nothing >= start below this node) or a leaf (the loop then
+reads a version lock from a tagged TID). Both crashed (SIGSEGV on the 0xff start keys of
+bench_scan_from). The guard returns the empty result for a missing child and copies a leaf
+child as findStart does (the adapter drops it if it is below start). Applied on top of
+artsync_olc_prefix_race.patch to the private copy ~/trie-scan/baselines/ARTSynchronized only
+(docs/scan_from_range_scan_2026-10-15.md, section 2).
+--- a/OptimisticLockCoupling/Tree.cpp
++++ b/OptimisticLockCoupling/Tree.cpp
+@@ -474,6 +474,13 @@
+                         nextNode = N::getChild(startLevel, node);
+                         node->readUnlockOrRestart(v, needRestart);
+                         if (needRestart) goto restart;
++                        if (nextNode == nullptr) {
++                            return false;
++                        }
++                        if (N::isLeaf(nextNode)) {
++                            copy(nextNode);
++                            return false;
++                        }
+                         level++;
+                         continue;
+                     }

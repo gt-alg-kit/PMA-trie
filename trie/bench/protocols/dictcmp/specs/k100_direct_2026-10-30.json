@@ -1,0 +1,46 @@
+{
+ "processes": 3,
+ "workers": 64,
+ "cpus": "0-63",
+ "population": "full",
+ "range_paired": true,
+ "range_batch": 40000,
+ "census_process": 1,
+ "profile": false,
+ "warm_rounds": 2,
+ "measured_rounds": 4,
+ "name": "full-population-k100-direct64-2026-10-30",
+ "datasets": [
+  "c2_xml_recon",
+  "enwiki_20261001_ns0",
+  "dna_full_31mers"
+ ],
+ "arms": [
+  "dfuds",
+  "dfuds-dt",
+  "art-olc",
+  "hot-rowex",
+  "fst-64"
+ ],
+ "point_sizes": [
+  "pct10"
+ ],
+ "query_modes": "direct",
+ "range_ks": [
+  100
+ ],
+ "range_workloads": [
+  "full-pop-range-paired-v1"
+ ],
+ "binaries": {
+  "bench_dictcmp": [
+   "REVISION_E"
+  ],
+  "bench_dictcmp_fst64": [
+   "REVISION_E"
+  ]
+ },
+ "salt": "full-pop-k100-direct64-20261030-v1",
+ "source_root": "~/dictcmp/results_full_population_k100_2026-10-30",
+ "snapshot": "~/dictcmp/main-full-e (to be frozen)"
+}

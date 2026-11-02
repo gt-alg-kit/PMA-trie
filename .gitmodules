@@ -1,0 +1,3 @@
+[submodule "pmabv/include/parlaylib"]
+	path = pmabv/include/parlaylib
+	url = https://github.com/ParAlg/parlaylib.git

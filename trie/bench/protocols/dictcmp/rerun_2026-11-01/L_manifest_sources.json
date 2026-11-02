@@ -1,0 +1,228 @@
+{
+ "c2_xml_recon": [
+  {
+   "key": "point:hit:direct:pct10",
+   "L": 21,
+   "source_file": "results/dictionary_comparison_full_hit_2026-10-29/remote/c2_xml_recon/L_manifest.tsv",
+   "source_sha256": "8d7957382b9eb3bde963a318c9574b7ccd31d29a43a514f9bd4a95fb555fb883",
+   "source_row": "point:hit:direct:pct10\t21\tdfuds p1 batch_ns=9944072 target_ms=200.000000 cap=1000",
+   "source_key": "point:hit:direct:pct10"
+  },
+  {
+   "key": "point:hit:shared:pct10",
+   "L": 43,
+   "source_file": "results/dictionary_comparison_full_hit_2026-10-29/remote/c2_xml_recon/L_manifest.tsv",
+   "source_sha256": "8d7957382b9eb3bde963a318c9574b7ccd31d29a43a514f9bd4a95fb555fb883",
+   "source_row": "point:hit:shared:pct10\t43\tdfuds p1 batch_ns=4706166 target_ms=200.000000 cap=1000",
+   "source_key": "point:hit:shared:pct10"
+  },
+  {
+   "key": "range:100",
+   "L": 31,
+   "source_file": "results/dictionary_comparison_k100_webbase_2026-10-30/task_b/remote/c2_xml_recon/L_manifest.tsv",
+   "source_sha256": "27dac408e73579afda43f13acfda9d4866cb4678d8676f0d0f867ff7f18a0a86",
+   "source_row": "range:100\t31\tdfuds p1 batch_ns=6469684 target_ms=200.000000 cap=1000",
+   "source_key": "range:100"
+  }
+ ],
+ "enwiki_20261001_ns0": [
+  {
+   "key": "point:hit:direct:pct10",
+   "L": 3,
+   "source_file": "results/dictionary_comparison_full_hit_2026-10-29/remote/enwiki_20261001_ns0/L_manifest.tsv",
+   "source_sha256": "9fb7a8d59461d008a31f942460f2929e91a637f86e316251cec67f2e6a4ccf38",
+   "source_row": "point:hit:direct:pct10\t3\tdfuds p1 batch_ns=88180240 target_ms=200.000000 cap=1000",
+   "source_key": "point:hit:direct:pct10"
+  },
+  {
+   "key": "point:hit:shared:pct10",
+   "L": 7,
+   "source_file": "results/dictionary_comparison_full_hit_2026-10-29/remote/enwiki_20261001_ns0/L_manifest.tsv",
+   "source_sha256": "9fb7a8d59461d008a31f942460f2929e91a637f86e316251cec67f2e6a4ccf38",
+   "source_row": "point:hit:shared:pct10\t7\tdfuds p1 batch_ns=29232194 target_ms=200.000000 cap=1000",
+   "source_key": "point:hit:shared:pct10"
+  },
+  {
+   "key": "range:100",
+   "L": 32,
+   "source_file": "results/dictionary_comparison_k100_webbase_2026-10-30/task_b/remote/enwiki_20261001_ns0/L_manifest.tsv",
+   "source_sha256": "787f9803b154c3d1fc859fe4aa4cf8e7e391aef1de8d33303f39f7a59051377f",
+   "source_row": "range:100\t32\tdfuds p1 batch_ns=6355834 target_ms=200.000000 cap=1000",
+   "source_key": "range:100"
+  }
+ ],
+ "webbase_2001": [
+  {
+   "key": "point:hit:direct:pct0.001",
+   "L": 1000,
+   "source_file": "results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv",
+   "source_sha256": "20513c850e2483dadf39999c71f64f633ef705417c68f94987a2b52024ba59b4",
+   "source_row": "point:hit:direct:pct0.001\t1000\tdfuds p1 batch_ns=156694 target_ms=200.000000 cap=1000",
+   "source_key": "point:hit:direct:pct0.001"
+  },
+  {
+   "key": "point:hit:shared:pct0.001",
+   "L": 239,
+   "source_file": "results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv",
+   "source_sha256": "20513c850e2483dadf39999c71f64f633ef705417c68f94987a2b52024ba59b4",
+   "source_row": "point:hit:shared:pct0.001\t239\tdfuds p1 batch_ns=838320 target_ms=200.000000 cap=1000",
+   "source_key": "point:hit:shared:pct0.001"
+  },
+  {
+   "key": "point:hit:direct:pct0.01",
+   "L": 188,
+   "source_file": "results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv",
+   "source_sha256": "20513c850e2483dadf39999c71f64f633ef705417c68f94987a2b52024ba59b4",
+   "source_row": "point:hit:direct:pct0.01\t188\tdfuds p1 batch_ns=1065368 target_ms=200.000000 cap=1000",
+   "source_key": "point:hit:direct:pct0.01"
+  },
+  {
+   "key": "point:hit:shared:pct0.01",
+   "L": 69,
+   "source_file": "results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv",
+   "source_sha256": "20513c850e2483dadf39999c71f64f633ef705417c68f94987a2b52024ba59b4",
+   "source_row": "point:hit:shared:pct0.01\t69\tdfuds p1 batch_ns=2904942 target_ms=200.000000 cap=1000",
+   "source_key": "point:hit:shared:pct0.01"
+  },
+  {
+   "key": "point:hit:direct:pct0.1",
+   "L": 20,
+   "source_file": "results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv",
+   "source_sha256": "20513c850e2483dadf39999c71f64f633ef705417c68f94987a2b52024ba59b4",
+   "source_row": "point:hit:direct:pct0.1\t20\tdfuds p1 batch_ns=10259312 target_ms=200.000000 cap=1000",
+   "source_key": "point:hit:direct:pct0.1"
+  },
+  {
+   "key": "point:hit:shared:pct0.1",
+   "L": 28,
+   "source_file": "results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv",
+   "source_sha256": "20513c850e2483dadf39999c71f64f633ef705417c68f94987a2b52024ba59b4",
+   "source_row": "point:hit:shared:pct0.1\t28\tdfuds p1 batch_ns=7171798 target_ms=200.000000 cap=1000",
+   "source_key": "point:hit:shared:pct0.1"
+  },
+  {
+   "key": "point:hit:direct:pct1",
+   "L": 2,
+   "source_file": "results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv",
+   "source_sha256": "20513c850e2483dadf39999c71f64f633ef705417c68f94987a2b52024ba59b4",
+   "source_row": "point:hit:direct:pct1\t2\tdfuds p1 batch_ns=101728928 target_ms=200.000000 cap=1000",
+   "source_key": "point:hit:direct:pct1"
+  },
+  {
+   "key": "point:hit:shared:pct1",
+   "L": 7,
+   "source_file": "results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv",
+   "source_sha256": "20513c850e2483dadf39999c71f64f633ef705417c68f94987a2b52024ba59b4",
+   "source_row": "point:hit:shared:pct1\t7\tdfuds p1 batch_ns=31014280 target_ms=200.000000 cap=1000",
+   "source_key": "point:hit:shared:pct1"
+  },
+  {
+   "key": "point:hit:direct:pct10",
+   "L": 1,
+   "source_file": "results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv",
+   "source_sha256": "20513c850e2483dadf39999c71f64f633ef705417c68f94987a2b52024ba59b4",
+   "source_row": "point:hit:direct:pct10\t1\tdfuds p1 batch_ns=1007844792 target_ms=200.000000 cap=1000",
+   "source_key": "point:hit:direct:pct10"
+  },
+  {
+   "key": "point:hit:shared:pct10",
+   "L": 2,
+   "source_file": "results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv",
+   "source_sha256": "20513c850e2483dadf39999c71f64f633ef705417c68f94987a2b52024ba59b4",
+   "source_row": "point:hit:shared:pct10\t2\tdfuds p1 batch_ns=162419692 target_ms=200.000000 cap=1000",
+   "source_key": "point:hit:shared:pct10"
+  },
+  {
+   "key": "range:1",
+   "L": 51,
+   "source_file": "results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv",
+   "source_sha256": "20513c850e2483dadf39999c71f64f633ef705417c68f94987a2b52024ba59b4",
+   "source_row": "range:1\t51\tdfuds p1 batch_ns=3926818 target_ms=200.000000 cap=1000",
+   "source_key": "range:1"
+  },
+  {
+   "key": "range:10",
+   "L": 50,
+   "source_file": "results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv",
+   "source_sha256": "20513c850e2483dadf39999c71f64f633ef705417c68f94987a2b52024ba59b4",
+   "source_row": "range:10\t50\tdfuds p1 batch_ns=4073988 target_ms=200.000000 cap=1000",
+   "source_key": "range:10"
+  },
+  {
+   "key": "range:100",
+   "L": 26,
+   "source_file": "results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv",
+   "source_sha256": "20513c850e2483dadf39999c71f64f633ef705417c68f94987a2b52024ba59b4",
+   "source_row": "range:100\t26\tdfuds p1 batch_ns=7711992 target_ms=200.000000 cap=1000",
+   "source_key": "range:100"
+  },
+  {
+   "key": "range:1000",
+   "L": 5,
+   "source_file": "results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv",
+   "source_sha256": "20513c850e2483dadf39999c71f64f633ef705417c68f94987a2b52024ba59b4",
+   "source_row": "range:1000\t5\tdfuds p1 batch_ns=48647814 target_ms=200.000000 cap=1000",
+   "source_key": "range:1000"
+  },
+  {
+   "key": "range:10000",
+   "L": 1,
+   "source_file": "results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv",
+   "source_sha256": "20513c850e2483dadf39999c71f64f633ef705417c68f94987a2b52024ba59b4",
+   "source_row": "range:10000\t1\tdfuds p1 batch_ns=383505288 target_ms=200.000000 cap=1000",
+   "source_key": "range:10000"
+  }
+ ],
+ "dna_full_31mers": [
+  {
+   "key": "point:hit:direct:pct10",
+   "L": 1,
+   "source_file": "results/dictionary_comparison_full_hit_2026-10-29/remote/dna_full_31mers/L_manifest.tsv",
+   "source_sha256": "ad0c95c9eeb7d377be17df77e012d036ae066680d66eda6a2c154bbe3049a481",
+   "source_row": "point:hit:direct:pct10\t1\tdfuds p1 batch_ns=3799061102 target_ms=200.000000 cap=1000",
+   "source_key": "point:hit:direct:pct10"
+  },
+  {
+   "key": "point:hit:shared:pct10",
+   "L": 1,
+   "source_file": "results/dictionary_comparison_full_hit_2026-10-29/remote/dna_full_31mers/L_manifest.tsv",
+   "source_sha256": "ad0c95c9eeb7d377be17df77e012d036ae066680d66eda6a2c154bbe3049a481",
+   "source_row": "point:hit:shared:pct10\t1\tdfuds p1 batch_ns=496867176 target_ms=200.000000 cap=1000",
+   "source_key": "point:hit:shared:pct10"
+  },
+  {
+   "key": "range:100",
+   "L": 23,
+   "source_file": "results/dictionary_comparison_k100_webbase_2026-10-30/task_b/remote/dna_full_31mers/L_manifest.tsv",
+   "source_sha256": "65c0908b3885cf9422f8bb97f4c3936a661c591c81c94b7f044e220c58955f5d",
+   "source_row": "range:100\t23\tdfuds p1 batch_ns=8813832 target_ms=200.000000 cap=1000",
+   "source_key": "range:100"
+  }
+ ],
+ "uk_2014_urls": [
+  {
+   "key": "point:hit:direct:pct10",
+   "L": 1,
+   "source_file": "results/dictionary_comparison_full_hit_2026-10-29/remote/uk_2014_urls/L_manifest.tsv",
+   "source_sha256": "ec522fb8019a98fd63e20f41ad0ede5412bac26ed6ec785ed83017f9b091db13",
+   "source_row": "point:hit:direct:pct10\t1\tdfuds p1 batch_ns=11303587240 target_ms=200.000000 cap=1000",
+   "source_key": "point:hit:direct:pct10"
+  },
+  {
+   "key": "point:hit:shared:pct10",
+   "L": 1,
+   "source_file": "results/dictionary_comparison_full_hit_2026-10-29/remote/uk_2014_urls/L_manifest.tsv",
+   "source_sha256": "ec522fb8019a98fd63e20f41ad0ede5412bac26ed6ec785ed83017f9b091db13",
+   "source_row": "point:hit:shared:pct10\t1\tdfuds p1 batch_ns=1249090790 target_ms=200.000000 cap=1000",
+   "source_key": "point:hit:shared:pct10"
+  },
+  {
+   "key": "range:100",
+   "L": 19,
+   "source_file": "results/dictionary_comparison_full_hit_2026-10-29/remote/uk_2014_urls/L_manifest.tsv",
+   "source_sha256": "ec522fb8019a98fd63e20f41ad0ede5412bac26ed6ec785ed83017f9b091db13",
+   "source_row": "range:100\t19\tdfuds p1 batch_ns=10671872 target_ms=200.000000 cap=1000",
+   "source_key": "range:100"
+  }
+ ]
+}

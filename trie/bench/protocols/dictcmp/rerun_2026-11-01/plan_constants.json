@@ -1,0 +1,208 @@
+{
+ "campaign": "end-b-full-hit-20261101-v1",
+ "salts": {
+  "A": "end-b-full-hit-20261101-v1",
+  "B": "end-b-insertion-20261101-v1"
+ },
+ "datasets": [
+  "c2_xml_recon",
+  "enwiki_20261001_ns0",
+  "webbase_2001",
+  "dna_full_31mers",
+  "uk_2014_urls"
+ ],
+ "N": {
+  "c2_xml_recon": 2149271,
+  "enwiki_20261001_ns0": 19315921,
+  "webbase_2001": 117603792,
+  "dna_full_31mers": 367422517,
+  "uk_2014_urls": 787801471
+ },
+ "arms": [
+  "dfuds",
+  "dfuds-dt"
+ ],
+ "point_sizes": {
+  "c2_xml_recon": [
+   "pct10"
+  ],
+  "enwiki_20261001_ns0": [
+   "pct10"
+  ],
+  "webbase_2001": [
+   "pct0.001",
+   "pct0.01",
+   "pct0.1",
+   "pct1",
+   "pct10"
+  ],
+  "dna_full_31mers": [
+   "pct10"
+  ],
+  "uk_2014_urls": [
+   "pct10"
+  ]
+ },
+ "range_ks": {
+  "c2_xml_recon": [
+   100
+  ],
+  "enwiki_20261001_ns0": [
+   100
+  ],
+  "webbase_2001": [
+   1,
+   10,
+   100,
+   1000,
+   10000
+  ],
+  "dna_full_31mers": [
+   100
+  ],
+  "uk_2014_urls": [
+   100
+  ]
+ },
+ "insert_pcts": {
+  "c2_xml_recon": {
+   "dfuds": [
+    "0.001",
+    "10"
+   ],
+   "dfuds-dt": [
+    "10"
+   ]
+  },
+  "enwiki_20261001_ns0": {
+   "dfuds": [
+    "0.001",
+    "10"
+   ],
+   "dfuds-dt": [
+    "10"
+   ]
+  },
+  "webbase_2001": {
+   "dfuds": [
+    "0.001",
+    "0.01",
+    "0.1",
+    "1",
+    "10"
+   ],
+   "dfuds-dt": [
+    "0.001",
+    "0.01",
+    "0.1",
+    "1",
+    "10"
+   ]
+  },
+  "dna_full_31mers": {
+   "dfuds": [
+    "0.001",
+    "10"
+   ],
+   "dfuds-dt": [
+    "10"
+   ]
+  },
+  "uk_2014_urls": {
+   "dfuds": [
+    "0.001",
+    "10"
+   ],
+   "dfuds-dt": [
+    "10"
+   ]
+  }
+ },
+ "insert_b": {
+  "c2_xml_recon": {
+   "0.001": 21,
+   "0.01": 214,
+   "0.1": 2149,
+   "1": 21492,
+   "10": 214927
+  },
+  "enwiki_20261001_ns0": {
+   "0.001": 193,
+   "0.01": 1931,
+   "0.1": 19315,
+   "1": 193159,
+   "10": 1931592
+  },
+  "webbase_2001": {
+   "0.001": 1176,
+   "0.01": 11760,
+   "0.1": 117603,
+   "1": 1176037,
+   "10": 11760379
+  },
+  "dna_full_31mers": {
+   "0.001": 3674,
+   "0.01": 36742,
+   "0.1": 367422,
+   "1": 3674225,
+   "10": 36742251
+  },
+  "uk_2014_urls": {
+   "0.001": 7878,
+   "0.01": 78780,
+   "0.1": 787801,
+   "1": 7878014,
+   "10": 78780147
+  }
+ },
+ "split": {
+  "c2_xml_recon": {
+   "N": 2149271,
+   "S": 1504489,
+   "H": 644782,
+   "perm_hash": "5dfb3921883724c1",
+   "stored_sorted_hash": "8fa7e01e1c11e947"
+  },
+  "enwiki_20261001_ns0": {
+   "N": 19315921,
+   "S": 13521144,
+   "H": 5794777,
+   "perm_hash": "a447956350a0c0d2",
+   "stored_sorted_hash": "2c64a4b04371c889"
+  },
+  "webbase_2001": {
+   "N": 117603792,
+   "S": 82322654,
+   "H": 35281138,
+   "perm_hash": "bced6f4a3a17927f",
+   "stored_sorted_hash": "83b9463df96cf7e7"
+  },
+  "dna_full_31mers": {
+   "N": 367422517,
+   "S": 257195761,
+   "H": 110226756,
+   "perm_hash": "231d0a72fb81420a",
+   "stored_sorted_hash": "46dac11eb7f6c6b6"
+  },
+  "uk_2014_urls": {
+   "N": 787801471,
+   "S": 551461029,
+   "H": 236340442,
+   "perm_hash": "d45c11e7bc289a4d",
+   "stored_sorted_hash": "0a3cb47935c87c63"
+  }
+ },
+ "key_end": {
+  "dfuds": "end_leaf",
+  "dfuds-dt": "end_leaf_front_and_rear"
+ },
+ "experiment": "full-pop-hit-v1",
+ "range_experiment": "full-pop-range-paired-v1",
+ "range_batch": 40000,
+ "workers": 64,
+ "cpus": "0-63",
+ "warm_rounds": 2,
+ "measured_rounds": 4,
+ "processes": 3,
+ "order": "XML, Wikipedia, WebBase, DNA, UK; per dataset Part A (6 sessions) then Part B"
+}

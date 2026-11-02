@@ -1,0 +1,16 @@
+# selected inherited L values of the END/B rerun (plan section 4): key, L, provenance; not recalibrated
+point:hit:direct:pct0.001	1000	inherited results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv sha256=20513c850e2483da | dfuds p1 batch_ns=156694 target_ms=200.000000 cap=1000
+point:hit:shared:pct0.001	239	inherited results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv sha256=20513c850e2483da | dfuds p1 batch_ns=838320 target_ms=200.000000 cap=1000
+point:hit:direct:pct0.01	188	inherited results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv sha256=20513c850e2483da | dfuds p1 batch_ns=1065368 target_ms=200.000000 cap=1000
+point:hit:shared:pct0.01	69	inherited results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv sha256=20513c850e2483da | dfuds p1 batch_ns=2904942 target_ms=200.000000 cap=1000
+point:hit:direct:pct0.1	20	inherited results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv sha256=20513c850e2483da | dfuds p1 batch_ns=10259312 target_ms=200.000000 cap=1000
+point:hit:shared:pct0.1	28	inherited results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv sha256=20513c850e2483da | dfuds p1 batch_ns=7171798 target_ms=200.000000 cap=1000
+point:hit:direct:pct1	2	inherited results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv sha256=20513c850e2483da | dfuds p1 batch_ns=101728928 target_ms=200.000000 cap=1000
+point:hit:shared:pct1	7	inherited results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv sha256=20513c850e2483da | dfuds p1 batch_ns=31014280 target_ms=200.000000 cap=1000
+point:hit:direct:pct10	1	inherited results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv sha256=20513c850e2483da | dfuds p1 batch_ns=1007844792 target_ms=200.000000 cap=1000
+point:hit:shared:pct10	2	inherited results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv sha256=20513c850e2483da | dfuds p1 batch_ns=162419692 target_ms=200.000000 cap=1000
+range:1	51	inherited results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv sha256=20513c850e2483da | dfuds p1 batch_ns=3926818 target_ms=200.000000 cap=1000
+range:10	50	inherited results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv sha256=20513c850e2483da | dfuds p1 batch_ns=4073988 target_ms=200.000000 cap=1000
+range:100	26	inherited results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv sha256=20513c850e2483da | dfuds p1 batch_ns=7711992 target_ms=200.000000 cap=1000
+range:1000	5	inherited results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv sha256=20513c850e2483da | dfuds p1 batch_ns=48647814 target_ms=200.000000 cap=1000
+range:10000	1	inherited results/dictionary_comparison_k100_webbase_2026-10-30/task_a/remote/webbase_2001/L_manifest.tsv sha256=20513c850e2483da | dfuds p1 batch_ns=383505288 target_ms=200.000000 cap=1000

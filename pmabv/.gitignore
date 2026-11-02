@@ -1,0 +1,32 @@
+# Build trees
+build/
+build_*/
+out/
+cmake-build-*/
+log/
+# CMake junk
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+Testing/
+compile_commands.json
+
+# Compiler artifacts
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.exe
+
+# Editor / OS junk
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Safety net for stray run output / plot dirs anywhere else.
+*.out
+plots_*/
+*_out/

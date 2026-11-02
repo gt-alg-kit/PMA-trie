@@ -1,0 +1,4 @@
+# selected inherited L values of the END/B rerun (plan section 4): key, L, provenance; not recalibrated
+point:hit:direct:pct10	3	inherited results/dictionary_comparison_full_hit_2026-10-29/remote/enwiki_20261001_ns0/L_manifest.tsv sha256=9fb7a8d59461d008 | dfuds p1 batch_ns=88180240 target_ms=200.000000 cap=1000
+point:hit:shared:pct10	7	inherited results/dictionary_comparison_full_hit_2026-10-29/remote/enwiki_20261001_ns0/L_manifest.tsv sha256=9fb7a8d59461d008 | dfuds p1 batch_ns=29232194 target_ms=200.000000 cap=1000
+range:100	32	inherited results/dictionary_comparison_k100_webbase_2026-10-30/task_b/remote/enwiki_20261001_ns0/L_manifest.tsv sha256=787f9803b154c3d1 | dfuds p1 batch_ns=6355834 target_ms=200.000000 cap=1000

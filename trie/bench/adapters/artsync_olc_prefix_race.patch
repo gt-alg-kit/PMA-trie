@@ -1,0 +1,50 @@
+diff --git a/OptimisticLockCoupling/Tree.cpp b/OptimisticLockCoupling/Tree.cpp
+index 54f8e32..fd4f87f 100644
+--- a/OptimisticLockCoupling/Tree.cpp
++++ b/OptimisticLockCoupling/Tree.cpp
+@@ -716,26 +716,40 @@ namespace ART_OLC {
+                                                                         LoadKeyFunction loadKey, bool &needRestart) {
+         if (n->hasPrefix()) {
+             uint32_t prevLevel = level;
++            // trie benchmark patch (2026-10-14): n is read optimistically, and a concurrent insert may
++            // shorten its prefix (setPrefix) while this loop runs; re-reading the length made
++            // `getPrefixLength() - i - 1` underflow and the memcpy below run out of bounds (SIGSEGV under
++            // contention). The length is read once, as ROWEX reads its atomic prefix snapshot, and an
++            // inconsistent state restarts the insert (the caller's version check would restart it anyway).
++            const uint32_t prefixLength = n->getPrefixLength();
+             Key kt;
+-            for (uint32_t i = 0; i < n->getPrefixLength(); ++i) {
++            for (uint32_t i = 0; i < prefixLength; ++i) {
+                 if (i == maxStoredPrefixLength) {
+                     auto anyTID = N::getAnyChildTid(n, needRestart);
+                     if (needRestart) return CheckPrefixPessimisticResult::Match;
+                     loadKey(anyTID, kt);
+                 }
++                if (level >= k.getKeyLen() || (i >= maxStoredPrefixLength && level >= kt.getKeyLen())) {
++                    needRestart = true;
++                    return CheckPrefixPessimisticResult::Match;
++                }
+                 uint8_t curKey = i >= maxStoredPrefixLength ? kt[level] : n->getPrefix()[i];
+                 if (curKey != k[level]) {
+                     nonMatchingKey = curKey;
+-                    if (n->getPrefixLength() > maxStoredPrefixLength) {
++                    if (prefixLength > maxStoredPrefixLength) {
+                         if (i < maxStoredPrefixLength) {
+                             auto anyTID = N::getAnyChildTid(n, needRestart);
+                             if (needRestart) return CheckPrefixPessimisticResult::Match;
+                             loadKey(anyTID, kt);
+                         }
+-                        memcpy(nonMatchingPrefix, &kt[0] + level + 1, std::min((n->getPrefixLength() - (level - prevLevel) - 1),
+-                                                                           maxStoredPrefixLength));
++                        const uint32_t copyLength = std::min((prefixLength - (level - prevLevel) - 1), maxStoredPrefixLength);
++                        if (level + 1 + copyLength > kt.getKeyLen()) {
++                            needRestart = true;
++                            return CheckPrefixPessimisticResult::Match;
++                        }
++                        memcpy(nonMatchingPrefix, &kt[0] + level + 1, copyLength);
+                     } else {
+-                        memcpy(nonMatchingPrefix, n->getPrefix() + i + 1, n->getPrefixLength() - i - 1);
++                        memcpy(nonMatchingPrefix, n->getPrefix() + i + 1, prefixLength - i - 1);
+                     }
+                     return CheckPrefixPessimisticResult::NoMatch;
+                 }
